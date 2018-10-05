@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_music_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/iv_info"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_light"
+        android:text="南山忆" />
+
+    <TextView
+        android:id="@+id/tv_music_info"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_music_name"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/iv_info"
+        android:gravity="center_vertical"
+        android:text="3.5M 许嵩 - 半城烟沙"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/info" />
+
+</RelativeLayout>
