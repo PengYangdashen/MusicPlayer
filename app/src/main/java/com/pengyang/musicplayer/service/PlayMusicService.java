@@ -224,7 +224,9 @@ public class PlayMusicService extends Service {
         player.stop();
         player.release();
         player = null;
-        timer.cancel();
-        timer = null;
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
     }
 }
