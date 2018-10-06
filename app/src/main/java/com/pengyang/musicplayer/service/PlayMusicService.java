@@ -34,7 +34,6 @@ public class PlayMusicService extends Service {
 
     public static boolean isPlaying = false;
 
-
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {

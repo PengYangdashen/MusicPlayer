@@ -15,16 +15,23 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        if (Build.VERSION.SDK_INT >= 23) {
-            if (this.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                // 申请权限 第二个参数是一个 数组 说明可以同时申请多个权限
-            } else {//已授权
-                Utils.setMusicList(AudioUtil.getAllMusics(this));
+
+        new Thread() {
+            @Override
+            public void run() {
+                if (Build.VERSION.SDK_INT >= 23) {
+                    if (getApplicationContext().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                        // 申请权限 第二个参数是一个 数组 说明可以同时申请多个权限
+                    } else {//已授权
+                        Utils.setMusicList(AudioUtil.getAllMusics(getApplicationContext()));
+                    }
+                } else {
+                    Utils.setMusicList(AudioUtil.getAllMusics(getApplicationContext()));
+                }
             }
-        } else {
-            Utils.setMusicList(AudioUtil.getAllMusics(this));
-        }
+        }.start();
     }
 
 }
+
 

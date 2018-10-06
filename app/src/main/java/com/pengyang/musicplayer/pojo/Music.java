@@ -15,6 +15,8 @@ public class Music implements Serializable {
     private String type;
     private String size;
     private String fileUrl;
+    private int songid;
+    private int singerid;
 
     public Music() {
     }
@@ -29,6 +31,36 @@ public class Music implements Serializable {
         this.type = type;
         this.size = size;
         this.fileUrl = fileUrl;
+    }
+
+    public Music(String fileName, String title, int duration, String singer, String album, String year, String type, String size, String fileUrl, int songid, int singerid) {
+        this.fileName = fileName;
+        this.title = title;
+        this.duration = duration;
+        this.singer = singer;
+        this.album = album;
+        this.year = year;
+        this.type = type;
+        this.size = size;
+        this.fileUrl = fileUrl;
+        this.songid = songid;
+        this.singerid = singerid;
+    }
+
+    public int getSongid() {
+        return songid;
+    }
+
+    public void setSongid(int songid) {
+        this.songid = songid;
+    }
+
+    public int getSingerid() {
+        return singerid;
+    }
+
+    public void setSingerid(int singerid) {
+        this.singerid = singerid;
     }
 
     public String getFileName() {
@@ -115,6 +147,8 @@ public class Music implements Serializable {
                 ", type='" + type + '\'' +
                 ", size='" + size + '\'' +
                 ", fileUrl='" + fileUrl + '\'' +
+                ", songid=" + songid +
+                ", singerid=" + singerid +
                 '}';
     }
 }

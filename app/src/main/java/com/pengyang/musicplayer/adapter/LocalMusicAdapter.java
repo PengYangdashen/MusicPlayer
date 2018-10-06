@@ -56,7 +56,9 @@ public class LocalMusicAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         holder.tvMusicName.setText(mList.get(position).getTitle());
-        holder.tvMusicInfo.setText(mList.get(position).getSize() + " " + mList.get(position).getSinger() + "-" + mList.get(position).getAlbum());
+        String size = mList.get(position).getSize();
+        if (size != null)
+        holder.tvMusicInfo.setText(size + " " + mList.get(position).getSinger() + "-" + mList.get(position).getAlbum());
         holder.ivInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

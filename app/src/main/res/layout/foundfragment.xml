@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,6 +52,189 @@
             android:padding="8dp"
             android:scaleType="centerInside"
             android:src="@mipmap/headset" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_new_music"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:background="@drawable/shape_new_music"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="新歌榜"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_new_music1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="1. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_new_music2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="2. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_new_music3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="3. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hot_music"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:background="@drawable/shape_hot_music"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="热歌榜"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hot_music1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="1. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_hot_music2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="2. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_hot_music3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="3. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_old_music"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:background="@drawable/shape_old_music"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="金曲榜"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_old_music1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="1. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_old_music2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="2. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_old_music3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="15dp"
+                android:text="3. 南山忆 - 许嵩"
+                android:textColor="@color/dimgrey"
+                android:textSize="12sp" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

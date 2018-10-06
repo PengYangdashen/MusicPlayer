@@ -3,6 +3,7 @@
     package="com.pengyang.musicplayer">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".util.BaseApplication"
@@ -22,6 +23,7 @@
         <activity android:name=".UI.BaseActivity"></activity>
         <activity android:name=".UI.LocalMusicActivity"></activity>
         <activity android:name=".UI.PlayActivity"></activity>
+        <activity android:name=".UI.TopActivity"></activity>
 
         <service android:name=".service.PlayMusicService"></service>
     </application>
